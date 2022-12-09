@@ -1,3 +1,5 @@
+import React, {useState} from 'react'
+
 function ColorForm(props){
     let [input, setInput] = useState('')
 
@@ -7,7 +9,6 @@ function ColorForm(props){
         // addColor, the function we just built, should be available within props.
         props.addColor(input)
     }
-
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -18,3 +19,4 @@ function ColorForm(props){
         </div>
     )
 }
+export default ColorForm
